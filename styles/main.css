@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Lora:ital@0;1&display=swap");
+body {
+  margin-top: 20%;
+}
+h1 {
+  font-family: "Lora", serif;
+  text-transform: lowercase;
+  font-weight: lighter;
+  font-size: 20px;
+  text-align: center;
+}
+h1:hover + div {
+  display: block;
+}
+div.lower {
+  text-transform: uppercase;
+  margin: 0pt 10pt 0pt 10pt;
+  font-family: "Lilita One", cursive;
+  display: none;
+  font-size: 20px;
+  text-align: center;
+}
+ul,
+ol {
+  list-style: none;
+}
