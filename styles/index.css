@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Roboto&display=swap");
+body {
+  background-color: black;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 10px;
+}
+h1 {
+  font-family: "Lora", serif;
+  text-transform: lowercase;
+  font-weight: lighter;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 0;
+}
+#profie {
+  text-align: center;
+}
+#profile-pic {
+  position: fixed;
+  left: 50%;
+  transform: translate(-300px);
+}
+.spacer {
+  height: 500px;
+}
+.left {
+  width: 25%;
+}
+.right {
+  position: absolute;
+  width: 25%;
+  text-align: right;
+  right: 10px;
+}
+#footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+}
+div#footer > ul {
+  position: absolute;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+div#footer img {
+  vertical-align: middle;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
