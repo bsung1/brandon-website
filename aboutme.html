@@ -4,25 +4,35 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Custom clothing designed by Brandon Sung"
-    />
+    <meta name="description" content="About Brandon Sung" />
     <meta
       name="keywords"
-      content="entrepreneur, designer, tired college student, fashion, custom clothing, Brandon Sung, Babson College"
+      content="entrepreneur, designer, tired college student, fashion, custom clothing, Brandon Sung, Babson College, about me"
     />
     <meta name="author" content="Brandon Sung" />
-    <title>Custom</title>
+    <title>About Me</title>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="/styles/general.css" />
     <style>
-      #pictures img {
-        width: 45%;
-        display: inline;
+      #profile {
+        position: fixed;
+        left: 50%;
+        top: 20%;
+        transform: translate(-300px);
+        z-index: 3;
+      }
+      .spacer2 {
+        height: 600px;
+      }
+      h1 {
+        font-family: "Lora", serif;
+        text-transform: lowercase;
+        font-weight: lighter;
+        font-size: 50px;
+        text-align: center;
+        margin-bottom: 0;
       }
     </style>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-0B9KQVRSG6"
@@ -52,40 +62,42 @@
         </li>
       </ul>
     </div>
-    <p>
-      I create clothing for myself and other people. My inspiration mostly comes
-      from the enviorment and people around me. I focus on embroidery and
-      upcycling. I love what I do. Here are some pictures of random works that I
-      have collected over the years.
-    </p>
-    <div id="pictures">
-      <img src="images/custom/1.jpeg" alt="custom work" title="custom work" />
-      <img src="images/custom/2.jpeg" alt="custom work" title="custom work" />
-      <img src="images/custom/3.jpeg" alt="custom work" title="custom work" />
-      <img src="images/custom/4.jpeg" alt="custom work" title="custom work" />
-      <img src="images/custom/5.jpeg" alt="custom work" title="custom work" />
-      <img src="images/custom/6.jpeg" alt="custom work" title="custom work" />
-      <img src="images/custom/7.jpeg" alt="custom work" title="custom work" />
-      <img src="images/custom/8.jpeg" alt="custom work" title="custom work" />
-      <img src="images/custom/9.jpeg" alt="custom work" title="custom work" />
-      <img src="images/custom/10.jpeg" alt="custom work" title="custom work" />
+    <div>
+      <h1>About Brandon Sung</h1>
+      <img
+        src="images/profile.png"
+        alt="Picture of Brandon Sung"
+        title="thats a nice outfit isn't it"
+        id="profile"
+        width="500"
+      />
+      <div class="spacer2"></div>
+      <p class="right">
+        My passion lies in an variety of works in art, clothing, furniture,
+        businesses and code. I design graphic art on photoshop and illustrator,
+        laser cut and etch photos, make wood furniture at the wood shop and
+        replicate movie props. I am also working on designing/sewing my own
+        clothing line. I create detailed embroidery files and sew them into
+        custom clothes. In addition, I collect expensive shoes and clothing to
+        resell. I worked on many businesses including a clothing heat
+        sublimation printing company, fashion accessory brand, ethical fashion
+        brand and a suscription based DIY toys. I also code on my free time. I
+        am working on an app that webscrapes data about calories from Trim
+        Dining hall menu. I play tennis and basketball for fun. I run cross
+        country, work out, and played clarinet in my high school marching band.
+        I also volunteer at Cradles to Crayons, Home for the Little Wanderers,
+        Harvard Square Meals, STEAM After School Program at Jeffersons.
+      </p>
+      <!-- 
+      <img
+        src="images/me3.png"
+        alt="Picture of Brandon Sung"
+        title="thats a nice outfit isn't it"
+        id="me"
+        class="left"
+      /> -->
+      <div class="spacer2"></div>
     </div>
-
-    <form action="GET">
-      <div>
-        <label for="reply">let me know what to do next</label>
-      </div>
-      <div>
-        <textarea
-          name="reply"
-          id="reply"
-          cols="30"
-          rows="2"
-          placeholder="give me some inspiration"
-        ></textarea>
-      </div>
-      <input type="submit" value="send" />
-    </form>
     <div id="footer">
       <ul>
         <li>

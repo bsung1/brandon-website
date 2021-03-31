@@ -4,20 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Rare clothing owned by Brandon Sung" />
+    <meta
+      name="keywords"
+      content="rare, entrepreneur, designer, tired college student, fashion, custom clothing, Brandon Sung, Babson College"
+    />
+    <meta name="author" content="Brandon Sung" />
     <title>Rare Pieces</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="/styles/general.css" />
+
     <style>
-      #header {
-        position: relative;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        background-color: black;
-      }
-      #header li {
-        display: inline;
-      }
       #clothing-pic img {
-        width: 24%;
+        width: 7%;
+        height: 300px;
+        object-fit: none;
+      }
+      #variable img {
+        width: 100%;
+      }
+      #variable {
+        display: none;
       }
     </style>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -37,8 +45,9 @@
   </head>
   <body>
     <div id="header">
-      <ul>
+      <ul id="headerul">
         <li><a href="index.html">Home</a></li>
+        <li><a href="aboutme.html">About Me</a></li>
         <li>
           <a href="professional.html">Professional</a>
         </li>
@@ -49,75 +58,104 @@
         </li>
       </ul>
     </div>
-    <h1>Rare Clothing</h1>
     <div id="clothing-pic">
-      <a href="piece.html"
-        ><img
-          src="images/rare/1-T.jpeg"
-          alt="Rare Clothing 1"
-          title="Ben Sherman Sherpa Jacket"
-      /></a>
-      <a href="piece.html"
-        ><img
-          src="images/rare/2-T.jpeg"
-          alt="Rare Clothing 2"
-          title="Schott Dragon Emboridery"
-      /></a>
-      <a href="piece.html"
-        ><img
-          src="images/rare/3-T.jpeg"
-          alt="Rare Clothing 3"
-          title="True Religion Blue Leather Jacket"
-      /></a>
-      <a href="piece.html"
-        ><img
-          src="images/rare/4-T.jpeg"
-          alt="Rare Clothing 4"
-          title="The Dude Jacket"
-      /></a>
-      <a href="piece.html"
-        ><img
-          src="images/rare/5-T.jpeg"
-          alt="Rare Clothing 5"
-          title="BBC Red Hoodie"
-      /></a>
-      <a href="piece.html"
-        ><img
-          src="images/rare/6-T.jpeg"
-          alt="Rare Clothing 6"
-          title="Chinatown Checkered Hoodie"
-      /></a>
-      <a href="piece.html"
-        ><img
-          src="images/rare/7-T.jpeg"
-          alt="Rare Clothing 7"
-          title="Kaws X Sesame Street Sweater #2"
-      /></a>
-      <a href="piece.html"
-        ><img
-          src="images/rare/8-T.jpeg"
-          alt="Rare Clothing 8"
-          title="OFF WHITE x Nike T-shirt"
-      /></a>
-      <a href="piece.html"
-        ><img
-          src="images/rare/9-T.jpeg"
-          alt="Rare Clothing 9"
-          title="Supreme X North Face Corona T"
-      /></a>
-      <a href="piece.html"
-        ><img
-          src="images/rare/10-T.jpeg"
-          alt="Rare Clothing 10"
-          title="Mauna-Kea Distressed Jeans"
-      /></a>
-      <a href="piece.html"
-        ><img
-          src="images/rare/11-T.jpeg"
-          alt="Rare Clothing 11"
-          title="Cahartt Black Work Pants"
-      /></a>
+      <img
+        src="images/rare/1-T.jpeg"
+        alt="Rare Clothing 1"
+        title="Ben Sherman Sherpa Jacket"
+        class="thumbnail"
+        id="1"
+      />
+      <img
+        src="images/rare/2-T.jpeg"
+        alt="Rare Clothing 2"
+        title="Schott Dragon Emboridery"
+        class="thumbnail"
+        id="2"
+      />
+
+      <img
+        src="images/rare/3-T.jpeg"
+        alt="Rare Clothing 3"
+        title="True Religion Blue Leather Jacket"
+        class="thumbnail"
+        id="3"
+      />
+
+      <img
+        src="images/rare/4-T.jpeg"
+        alt="Rare Clothing 4"
+        title="The Dude Jacket"
+        class="thumbnail"
+        id="4"
+      />
+
+      <img
+        src="images/rare/5-T.jpeg"
+        alt="Rare Clothing 5"
+        title="Billionare Boys Club Red Hoodie"
+        class="thumbnail"
+        id="5"
+      />
+
+      <img
+        src="images/rare/6-T.jpeg"
+        alt="Rare Clothing 6"
+        title="Chinatown Checkered Hoodie"
+        class="thumbnail"
+        id="6"
+      />
+
+      <img
+        src="images/rare/7-T.jpeg"
+        alt="Rare Clothing 7"
+        title="Kaws X Sesame Street Sweater #2"
+        class="thumbnail"
+        id="7"
+      />
+
+      <img
+        src="images/rare/8-T.jpeg"
+        alt="Rare Clothing 8"
+        title="OFF WHITE x Nike T-shirt"
+        class="thumbnail"
+        id="8"
+      />
+
+      <img
+        src="images/rare/9-T.jpeg"
+        alt="Rare Clothing 9"
+        title="Supreme X North Face One World T"
+        class="thumbnail"
+        id="9"
+      />
+
+      <img
+        src="images/rare/10-T.jpeg"
+        alt="Rare Clothing 10"
+        title="Mauna-Kea Distressed Jeans"
+        class="thumbnail"
+        id="10"
+      />
+
+      <img
+        src="images/rare/11-T.jpeg"
+        alt="Rare Clothing 11"
+        title="Cahartt Black Work Pants"
+        class="thumbnail"
+        id="11"
+      />
     </div>
+    <div id="variable">
+      <h1 id="clothname"></h1>
+      <img src="" alt="Front" title="Front Profile" id="F" />
+      <h3 id="description"></h3>
+      <img src="" alt="Back" title="Back Profile" id="B" />
+      <img src="" alt="Material" title="Material" id="MAT" />
+      <img src="" alt="Tag" title="Tag" id="TAG" />
+      <img src="" alt="Random" title="Random Picture" id="RAND" />
+    </div>
+    <div class="spacer"></div>
     <div id="footer">
       <ul>
         <li>
@@ -172,5 +210,57 @@
         </li>
       </ul>
     </div>
+    <script>
+      function thumbnail(i, off) {
+        // console.log(document.getElementById(i).style);
+        if (off) {
+          document.getElementById(i).style = "object-fit:none; width:7%";
+        } else {
+          document.getElementById(i).style = "object-fit:cover; width:300px";
+        }
+      }
+      function thumbclick(i) {
+        // console.log(document.getElementById("F").src);
+        let desc = [
+          "Here is a rare Ben Sherman jacket from the 2013 Plectrum collection. The term plectrum, also known as guitar pick, captures the essence of this collection by combining the flashy, contemporary style of English fashion with the dark colors traditional gentlemen wear. The jacket features a heavy body of waxed canvas padded and lined with cotton. The large fur collar contrasts the entire piece, giving it a unique overall look.",
+          "The piece here is a Schott puffer bomber jacket. Schott is best known for their exclusive leather jackets that they sold in NYC. This jacket features 2 dragon motifs embroidered on the front and back of the jacket. The inside is lined with a bright orange polyester blend. The embroidery itself is done masterfully and is a very hard piece to replicate.",
+          "Here is a very rare blue leather jacket made by the famous denim company True Religion. These leather jackets were created in very limited runs and retailed for around $600. On the lining says the quote, “No Guts No Glory”, featuring its famous horseshoe logo. The same logo can be seen on its left shoulder. The high quality blue sheep leather and silver zippers truly makes this a unique piece of clothing.",
+          "This piece by esteemed fashion house Maison Labiche nods to Jeff Lebowski aka the Dude from the 1998 film The Big Lebowski. The embroideries on the front features Jeff and bowling ball and pins. The embroidery on the back says the dude with blue and red threads. Overall the piece is really high quality and no longer produced by Maison Labiche. It is rare to find a similar jacket elsewhere.",
+          "The bright hoodie from Billionaires Boy Club features a large astronaut logo on the front of the hoodie. The royal purple hood is stitched onto the red body of a sweater making a unique shape for the hood when worn. The oversized fit and outrageous color choices also contribute to the exotic look of this hoodie.",
+          "This is a hoodie from Chinatown market collaboration with Original Penguin. This strange collaboration in FW18 of Original Penguins collection featured checkered patterned clothing with a giant Chinatown market logo stitched on the front. The hoodie features a classic fit with contrasting patterns creating a unique piece. It is worthy to note that due to backlash with Asian hate movement, Chinatown Market will be changing the name of their brand and removing the iconic logo raising the rarity of pieces like this.",
+          "Featured here is a Sesame Street x KAWS x Uniqlo collaboration sweater. The collection features the famous Sesame Street characters and street artist, known as KAWS artwork: BFF printed on high quality Uniqlo blanks. The collaboration was highly anticipated and well received by the public. It also put Uniqlo on the streetwear scene. The sweater features the most characters from both universes posing together.",
+          "Here is a Nike x Off-White t-shirt. Unlike past collaboration between the two brands, this t-shirt feature a unique shape and cut. The loose fit also suggests that this shirt was made specifically for the collaboration and not printed on Nike blanks as it has in the past. The front features Off-White motifs and a skinny Nike logo. The back features white spray paint of the iconic Off-White arrows logo. Aside from the strange shape, there also holes in the shirt filled by nets. This shirt was released in 2019 along with athletic shoes, pants and hoodies.",
+          "Here is a Supreme x North Face collaboration known as One World. Released during the FW20 of the supreme season, the shirt was meant for a fundraiser to help with the pandemic. It served as a reminder that we have only one world to share among all of us. The t-shirt was produced in very limited quantities and has become very desired in the secondary market.",
+          "Here is a unique pair of denim jeans by Mauna-Kea. Although not much information exists about this pair of jeans, due to its superb quality and trendy design, the pants are very desirable on the secondary market.",
+          "Here is a pair of black, Carhartt work pants. Carhartt is well accredited with durable, long lasting clothing designed for wear and tear of workers. The pair of pants feature fire retardant material and a short cut hem making it a one of a kind piece.",
+        ];
+        document.getElementById("variable").style = "display:block";
+        document.getElementById(
+          "clothname"
+        ).innerHTML = document.getElementById(i).title;
+        document.getElementById("F").src = "images/rare/" + i + "-F.jpeg";
+        document.getElementById("description").innerHTML =
+          desc[parseInt(i) - 1];
+        document.getElementById("B").src = "images/rare/" + i + "-B.jpeg";
+        document.getElementById("MAT").src = "images/rare/" + i + "-MAT.jpeg";
+        document.getElementById("TAG").src = "images/rare/" + i + "-TAG.jpeg";
+        document.getElementById("RAND").src = "images/rare/" + i + "-RAND.jpeg";
+      }
+      document.querySelectorAll(".thumbnail").forEach((t) =>
+        t.addEventListener("mouseover", function () {
+          thumbnail(t.id);
+        })
+      );
+      document.querySelectorAll(".thumbnail").forEach((t) =>
+        t.addEventListener("mouseout", function () {
+          thumbnail(t.id, true);
+        })
+      );
+      document.querySelectorAll(".thumbnail").forEach((t) =>
+        t.addEventListener("click", function () {
+          thumbclick(t.id);
+        })
+      );
+    </script>
   </body>
 </html>

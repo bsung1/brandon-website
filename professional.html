@@ -4,17 +4,40 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Professional expierence of Brandon Sung"
+    />
+    <meta
+      name="keywords"
+      content="professional, work, school, entrepreneur, designer, tired college student, fashion, custom clothing, Brandon Sung, Babson College"
+    />
+    <meta name="author" content="Brandon Sung" />
     <title>Professional</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/styles/general.css" />
     <style>
-      #header {
-        position: relative;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        background-color: black;
+      h2 {
+        font-family: "Lora", serif;
+        text-transform: lowercase;
+        font-weight: lighter;
+        font-size: 50px;
+        margin-bottom: 0;
       }
-      #header li {
-        display: inline;
+      div.line {
+        display: none;
+      }
+      h3:hover {
+        color: blue;
+      }
+      h3:hover + div.line {
+        display: block;
+      }
+      div.line h3 {
+        font-size: 20px;
+      }
+      #text {
+        width: 75%;
       }
     </style>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -35,8 +58,9 @@
 
   <body>
     <div id="header">
-      <ul>
+      <ul id="headerul">
         <li><a href="index.html">Home</a></li>
+        <li><a href="aboutme.html">About Me</a></li>
         <li>
           <a href="professional.html">Professional</a>
         </li>
@@ -47,122 +71,154 @@
         </li>
       </ul>
     </div>
-    <h1>Proffesional Stuff About Me</h1>
-    <h2>Education</h2>
-    <h3>Babson College, School of Business, Wellesley, MA</h3>
-    <h3>Expected May 2022</h3>
-    <p>
-      Candidate for Bachelor of Science in Business Administration,
-      Concentration in Business Analytics and IT Management, GPA: 3.88/4.0,
-      Dean’s List all semesters
-    </p>
-    <h3>Parsippany Hills High School, Parsippany, NJ</h3>
-    <h3>September 2014 - June 2018</h3>
-    <p>GPA: 4.49 NHS, Mu Alpha Theta, Honors Student</p>
-    <h2>Professional Experience</h2>
-    <h3>Hope Sews, Remote</h3>
-    <h3>May 2020 - November 2020</h3>
-    <h4>Operations Intern</h4>
-    <ul>
-      <li>
-        Worked with internal stakeholders and external vendors to enable Hope
-        Sews direct online fulfillment and e-commerce capabilities.
-      </li>
-      <li>
-        Analyzed business processes to document technical requirements for
-        webstore and shipping logistics.
-      </li>
-      <li>
-        Researched, documented, and implemented integrations to enable data flow
-        between webstore, inventory systems, and shipping applications.
-      </li>
-      <li>
-        Analyzed potential third party logistics (3PLs) to identify
-        opportunities for future growth and expansion.
-      </li>
-    </ul>
-    <h3>Chain Sea Information Group, Taipei, Taiwan</h3>
-    <h3>July 2019 - September 2019</h3>
-    <h4>Intern</h4>
-    <ul>
-      <li>
-        Performed due diligence in anticipation of foreign IPO by compiling
-        internal information on on-premise Contact Centers, Cloud-based
-        technology, and AI development progress.
-      </li>
-      <li>
-        Collaborated with sales, HR, accounting and executive team members in an
-        unfamiliar setting to create and organize investment slide decks and
-        visualizations.
-      </li>
-      <li>
-        Worked closely with internal stakeholders to create English and Chinese
-        investment pitches for potential US investors and Chinese VC firms.
-      </li>
-    </ul>
-    <h2>Projects</h2>
-    <h3>U.S. Beer Gift Pack Opportunity, ZX Ventures</h3>
-    <h3>August 2020 - Present</h3>
-    <h4>Student Consultant</h4>
-    <ul>
-      <li>
-        Analyzed research on the U.S. beer market to segment and identify the
-        target demographics for potential new product lines.
-      </li>
-      <li>
-        Worked closely with clients to identify opportunities in the gift pack
-        industry by analyzing survey results and in depth cost/value analysis of
-        merchandise products.
-      </li>
-      <li>
-        Developed detailed recommendations for merchandise-alcohol pairings,
-        pricing, implementation plan and additional gift pack opportunities in
-        the U.S. markets.
-      </li>
-    </ul>
-    <h3>Terra, Babson College</h3>
-    <h3>November 2018 - April 2019</h3>
-    <h4>Co-CEO</h4>
-    <ul>
-      <li>
-        Created and developed a sustainable accessories brand to fight fast
-        fashion stigma.
-      </li>
-      <li>
-        Managed 20 employees distributed into five departments and coordinated
-        multiple projects to create positive social impact.
-      </li>
-    </ul>
-    <h2>Skills</h2>
-    <table>
-      <tr>
-        <th>Software</th>
-        <th>General</th>
-        <th>Languages</th>
-      </tr>
-      <tr>
-        <td>Proficient in Python</td>
-        <td>Adobe Illustrator</td>
-        <td>Fluent in English</td>
-      </tr>
-      <tr>
-        <td>Proficient in R</td>
-        <td>Microsoft Word</td>
-        <td>Fluent in Mandarin</td>
-      </tr>
-      <tr>
-        <td>Proficient in MySQL</td>
-        <td>Microsoft Powerpoint</td>
-      </tr>
-      <tr>
-        <td>Microsoft Excel</td>
-        <td>Photoshop</td>
-      </tr>
-      <tr>
-        <td>Tableau</td>
-        <td>Salesforce</td>
-      </tr>
-    </table>
+
+    <img
+      src="images/me3.png"
+      alt="Picture of Brandon Sung"
+      title="thats a nice outfit isn't it"
+      id="me"
+      class="right"
+    />
+    <div id="text">
+      <h1>
+        Proffesional Stuff About
+        <a href="https://www.linkedin.com/in/-brandonsung/">Brandon Sung</a>
+      </h1>
+      <h2>Education</h2>
+
+      <h3>Babson College, School of Business, Wellesley, MA</h3>
+      <div class="line">
+        <h3>Expected May 2022</h3>
+        <p>
+          Candidate for Bachelor of Science in Business Administration,
+          Concentration in Business Analytics and IT Management, GPA: 3.88/4.0,
+          Dean’s List all semesters
+        </p>
+      </div>
+
+      <h3>Parsippany Hills High School, Parsippany, NJ</h3>
+
+      <div class="line">
+        <h3>September 2014 - June 2018</h3>
+        <p>GPA: 4.49 NHS, Mu Alpha Theta, Honors Student</p>
+      </div>
+      <h2>Professional Experience</h2>
+
+      <h3>Hope Sews, Remote</h3>
+      <div class="line">
+        <h3>May 2020 - November 2020</h3>
+        <h4>Operations Intern</h4>
+        <ul>
+          <li>
+            Worked with internal stakeholders and external vendors to enable
+            Hope Sews direct online fulfillment and e-commerce capabilities.
+          </li>
+          <li>
+            Analyzed business processes to document technical requirements for
+            webstore and shipping logistics.
+          </li>
+          <li>
+            Researched, documented, and implemented integrations to enable data
+            flow between webstore, inventory systems, and shipping applications.
+          </li>
+          <li>
+            Analyzed potential third party logistics (3PLs) to identify
+            opportunities for future growth and expansion.
+          </li>
+        </ul>
+      </div>
+
+      <h3>Chain Sea Information Group, Taipei, Taiwan</h3>
+      <div class="line">
+        <h3>July 2019 - September 2019</h3>
+        <h4>Intern</h4>
+        <ul>
+          <li>
+            Performed due diligence in anticipation of foreign IPO by compiling
+            internal information on on-premise Contact Centers, Cloud-based
+            technology, and AI development progress.
+          </li>
+          <li>
+            Collaborated with sales, HR, accounting and executive team members
+            in an unfamiliar setting to create and organize investment slide
+            decks and visualizations.
+          </li>
+          <li>
+            Worked closely with internal stakeholders to create English and
+            Chinese investment pitches for potential US investors and Chinese VC
+            firms.
+          </li>
+        </ul>
+      </div>
+      <h2>Projects</h2>
+      <h3>U.S. Beer Gift Pack Opportunity, ZX Ventures</h3>
+      <div class="line">
+        <h3>August 2020 - Present</h3>
+        <h4>Student Consultant</h4>
+        <ul>
+          <li>
+            Analyzed research on the U.S. beer market to segment and identify
+            the target demographics for potential new product lines.
+          </li>
+          <li>
+            Worked closely with clients to identify opportunities in the gift
+            pack industry by analyzing survey results and in depth cost/value
+            analysis of merchandise products.
+          </li>
+          <li>
+            Developed detailed recommendations for merchandise-alcohol pairings,
+            pricing, implementation plan and additional gift pack opportunities
+            in the U.S. markets.
+          </li>
+        </ul>
+      </div>
+      <h3>Terra, Babson College</h3>
+      <div class="line">
+        <h3>November 2018 - April 2019</h3>
+        <h4>Co-CEO</h4>
+        <ul>
+          <li>
+            Created and developed a sustainable accessories brand to fight fast
+            fashion stigma.
+          </li>
+          <li>
+            Managed 20 employees distributed into five departments and
+            coordinated multiple projects to create positive social impact.
+          </li>
+        </ul>
+      </div>
+      <h2>Skills</h2>
+      <table>
+        <tr>
+          <th>Software</th>
+          <th>General</th>
+          <th>Languages</th>
+        </tr>
+        <tr>
+          <td>Proficient in Python</td>
+          <td>Adobe Illustrator</td>
+          <td>Fluent in English</td>
+        </tr>
+        <tr>
+          <td>Proficient in R</td>
+          <td>Microsoft Word</td>
+          <td>Fluent in Mandarin</td>
+        </tr>
+        <tr>
+          <td>Proficient in MySQL</td>
+          <td>Microsoft Powerpoint</td>
+        </tr>
+        <tr>
+          <td>Microsoft Excel</td>
+          <td>Photoshop</td>
+        </tr>
+        <tr>
+          <td>Tableau</td>
+          <td>Salesforce</td>
+        </tr>
+      </table>
+    </div>
+    <div class="spacer"></div>
     <div id="footer">
       <ul>
         <li>

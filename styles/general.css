@@ -11,26 +11,9 @@ a {
   text-decoration: none;
   color: white;
 }
-h1 {
-  font-family: "Lora", serif;
-  text-transform: lowercase;
-  font-weight: lighter;
-  font-size: 50px;
-  text-align: center;
-  margin-bottom: 0;
-}
-#profie {
-  text-align: center;
-}
-#profile-pic {
-  position: fixed;
-  left: 50%;
-  top: 20%;
-  transform: translate(-300px);
-  z-index: 3;
-}
+
 .spacer {
-  height: 600px;
+  height: 200px;
 }
 .left {
   width: 25%;
@@ -41,29 +24,7 @@ h1 {
   text-align: right;
   right: 10px;
 }
-h2 {
-  /* display: none; */
-  position: relative;
-  font-size: 1000%;
-  margin: 0;
-  z-index: 2;
-}
-/* HOVER ON profile */
 
-div#background {
-  background-color: blue;
-  position: fixed;
-  margin: 0;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  display: none;
-}
-#profile-pic:hover ~ #background {
-  display: inline;
-}
 /* FOOTER */
 #footer {
   position: relative;
