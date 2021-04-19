@@ -48,7 +48,9 @@
         </li>
       </ul>
     </div>
-
+    <div id="psst">
+      <p>*psst mouse over here*</p>
+    </div>
     <h1>a little about...</h1>
     <h2>BRANDON</h2>
     <h2>SUNG</h2>
@@ -143,5 +145,36 @@
         </li>
       </ul>
     </div>
+    <script>
+      function setcookie(name, value, day) {
+        let date = new Date();
+        date.setTime(date.getTime() + day * 24 * 60 * 60 * 1000);
+        let expires = "expires=" + date.toUTCString();
+        document.cookie = name + "=" + value + ";" + expires + ";path=/";
+      }
+      function checkcookie(name) {
+        accessed = decodeURIComponent(document.cookie);
+        clean = accessed.split(";");
+        console.log(clean);
+        let exist;
+        for (let index = 0; index < clean.length; index++) {
+          let c = clean[index];
+          if (c.indexOf(name + "=") == 0) {
+            exist = 1;
+          }
+        }
+        if (exist != 1) {
+          setcookie("accessed", 1, 100);
+          document.getElementById("psst").style.display = "block";
+        }
+      }
+      function magic() {
+        document.getElementById("psst").style.display = "none";
+      }
+      document.querySelector("body").onload = function () {
+        checkcookie("accessed");
+      };
+      document.getElementById("psst").onmouseover = magic;
+    </script>
   </body>
 </html>

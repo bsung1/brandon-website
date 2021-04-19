@@ -11,6 +11,13 @@
     />
     <meta name="author" content="Brandon Sung" />
     <title>Feedback</title>
+    <style>
+      #submitbutton {
+        background-color: black;
+        color: white;
+        font-family: "Roboto", sans-serif;
+      }
+    </style>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="/styles/general.css" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -44,7 +51,7 @@
       </ul>
     </div>
     <h1>Please give feedback or get in contact!</h1>
-    <form action="POST">
+    <form action="">
       <div>
         <label for="Last_Name"> Last Name: </label>
         <input
@@ -84,7 +91,8 @@
           placeholder="appreciate any comments, suggestions, feedback..."
         ></textarea>
       </div>
-      <div><input type="submit" value="submit" /></div>
+      <div><input type="submit" value="submit" id="submitbutton" /></div>
+      <div id="error"></div>
     </form>
     <div id="footer">
       <ul>
@@ -140,5 +148,21 @@
         </li>
       </ul>
     </div>
+    <script>
+      function validateemail() {
+        let form = document.querySelector("form");
+        let email = form["Email"].value;
+        // read the documentation on regexp but i cant eliminate email with 2 @
+        console.log(email, /@/.test(email));
+        if (/@/.test(email)) {
+          document.getElementById("error").innerHTML = "Submitted";
+        } else {
+          document.getElementById("error").innerHTML =
+            "Please enter a proper email.";
+        }
+        return false;
+      }
+      document.getElementById("submitbutton").onclick = validateemail;
+    </script>
   </body>
 </html>

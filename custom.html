@@ -17,9 +17,16 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="/styles/general.css" />
     <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lora&family=Roboto&display=swap");
+
       #pictures img {
         width: 45%;
         display: inline;
+      }
+      #submitbutton {
+        background-color: black;
+        color: white;
+        font-family: "Roboto", sans-serif;
       }
     </style>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -59,19 +66,15 @@
       have collected over the years.
     </p>
     <div id="pictures">
-      <img src="images/custom/1.jpeg" alt="custom work" title="custom work" />
-      <img src="images/custom/2.jpeg" alt="custom work" title="custom work" />
-      <img src="images/custom/3.jpeg" alt="custom work" title="custom work" />
-      <img src="images/custom/4.jpeg" alt="custom work" title="custom work" />
-      <img src="images/custom/5.jpeg" alt="custom work" title="custom work" />
-      <img src="images/custom/6.jpeg" alt="custom work" title="custom work" />
-      <img src="images/custom/7.jpeg" alt="custom work" title="custom work" />
-      <img src="images/custom/8.jpeg" alt="custom work" title="custom work" />
-      <img src="images/custom/9.jpeg" alt="custom work" title="custom work" />
-      <img src="images/custom/10.jpeg" alt="custom work" title="custom work" />
+      <img
+        src="images/customs/01.jpeg"
+        alt="custom work"
+        title="custom work"
+        id="customs"
+      />
     </div>
 
-    <form action="GET">
+    <form action="" method="POST">
       <div>
         <label for="reply">let me know what to do next</label>
       </div>
@@ -84,7 +87,7 @@
           placeholder="give me some inspiration"
         ></textarea>
       </div>
-      <input type="submit" value="send" />
+      <input type="submit" value="submit" id="submitbutton" />
     </form>
     <div id="footer">
       <ul>
@@ -140,5 +143,35 @@
         </li>
       </ul>
     </div>
+    <script>
+      function slideshow() {
+        original = document.querySelector("#customs").src;
+        let next =
+          parseInt(
+            original[
+              document.querySelector("#customs").src.search("customs/") + 8
+            ]
+          ) *
+            10 +
+          (parseInt(
+            original[
+              document.querySelector("#customs").src.search("customs/") + 9
+            ]
+          ) +
+            1);
+        if (next < 10) {
+          next = "0" + next;
+        }
+        if (next === 11) {
+          next = "01";
+        }
+        document.querySelector("#customs").src =
+          "images/customs/" + next + ".jpeg";
+        console.log("images/customs/" + next + ".jpeg");
+
+        setTimeout(slideshow, 2500);
+      }
+      document.querySelector("body").onload = slideshow;
+    </script>
   </body>
 </html>
