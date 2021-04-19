@@ -28,6 +28,27 @@
         color: white;
         font-family: "Roboto", sans-serif;
       }
+      input::placeholder,
+      textarea::placeholder {
+        font-family: "Lora", serif;
+        text-transform: lowercase;
+      }
+      #description {
+        display: inline-block;
+        width: 30%;
+        padding-left: 50px;
+      }
+      #customs {
+        vertical-align: middle;
+      }
+
+      h1 {
+        font-family: "Lora", serif;
+        text-transform: lowercase;
+        font-weight: lighter;
+        font-size: 50px;
+        margin-bottom: 0;
+      }
     </style>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
@@ -72,12 +93,14 @@
         title="custom work"
         id="customs"
       />
+      <h1 id="description">Bone Patchwork pants</h1>
     </div>
-
+    <div class="spacer"></div>
     <form action="" method="POST">
       <div>
         <label for="reply">let me know what to do next</label>
       </div>
+
       <div>
         <textarea
           name="reply"
@@ -89,6 +112,7 @@
       </div>
       <input type="submit" value="submit" id="submitbutton" />
     </form>
+    <div class="spacer"></div>
     <div id="footer">
       <ul>
         <li>
@@ -168,6 +192,27 @@
         document.querySelector("#customs").src =
           "images/customs/" + next + ".jpeg";
         console.log("images/customs/" + next + ".jpeg");
+        const desc = [
+          "Bone Patchwork pants",
+          "Matching Embroidery Bear hoodies",
+          "Split Patchwork sweater",
+          "Paint-splatter pants",
+          "The Creation of Adam embroidery",
+          "Custom BAPSA Mask",
+          "Custom Chi Omega Rose embroidery",
+          "Custom Chi Omega Butterfly embroidery",
+          "Custom Sorority Sister Disney T-Shirts",
+          "Jordan 1 Built Different Graffiti",
+        ];
+
+        document.getElementById("description").innerHTML =
+          desc[
+            parseInt(
+              original[
+                document.querySelector("#customs").src.search("customs/") + 9
+              ]
+            )
+          ];
 
         setTimeout(slideshow, 2500);
       }

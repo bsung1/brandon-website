@@ -29,7 +29,7 @@ a {
 #footer {
   position: relative;
   left: 0;
-  bottom: 0;
+  bottom: 50px;
   width: 100%;
   background-color: black;
 }

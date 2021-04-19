@@ -58,7 +58,7 @@
         </li>
       </ul>
     </div>
-    <h1>click on something you're interested in</h1>
+    <h1 id="click">click on something you're interested in</h1>
     <div id="clothing-pic">
       <img
         src="images/rare/1-T.jpeg"
@@ -222,6 +222,7 @@
       }
       function thumbclick(i) {
         // console.log(document.getElementById("F").src);
+        document.getElementById("click").style.display = "none";
         let desc = [
           "Here is a rare Ben Sherman jacket from the 2013 Plectrum collection. The term plectrum, also known as guitar pick, captures the essence of this collection by combining the flashy, contemporary style of English fashion with the dark colors traditional gentlemen wear. The jacket features a heavy body of waxed canvas padded and lined with cotton. The large fur collar contrasts the entire piece, giving it a unique overall look.",
           "The piece here is a Schott puffer bomber jacket. Schott is best known for their exclusive leather jackets that they sold in NYC. This jacket features 2 dragon motifs embroidered on the front and back of the jacket. The inside is lined with a bright orange polyester blend. The embroidery itself is done masterfully and is a very hard piece to replicate.",
