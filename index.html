@@ -155,7 +155,6 @@
       function checkcookie(name) {
         accessed = decodeURIComponent(document.cookie);
         clean = accessed.split(";");
-        console.log(clean);
         let exist;
 
         for (let index = 0; index < clean.length; index++) {
@@ -167,15 +166,16 @@
           }
         }
         if (exist != 1) {
-          setcookie("accessed", 1, 100);
+          setcookie(name, 1, 100);
           document.getElementById("psst").style.display = "block";
+          console.log("hello! welcome!");
         }
       }
       function magic() {
         document.getElementById("psst").style.display = "none";
       }
       document.querySelector("body").onload = function () {
-        checkcookie("accessed");
+        checkcookie("brandonwashere");
       };
       document.getElementById("psst").onmouseover = magic;
     </script>
