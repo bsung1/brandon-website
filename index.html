@@ -157,10 +157,13 @@
         clean = accessed.split(";");
         console.log(clean);
         let exist;
+
         for (let index = 0; index < clean.length; index++) {
           let c = clean[index];
-          if (c.indexOf(name + "=") == 0) {
+          console.log(c.indexOf(name + "="));
+          if (c.indexOf(name + "=") == 1) {
             exist = 1;
+            console.log("welcome back");
           }
         }
         if (exist != 1) {
